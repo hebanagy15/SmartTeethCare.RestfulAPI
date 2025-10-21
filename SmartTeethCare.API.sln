@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTeethCare.Core", "Smar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTeethCare.Repository", "SmartTeethCare.Repository\SmartTeethCare.Repository.csproj", "{E02AEB41-B597-4B86-97E4-AC609E1EE3BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTeethCare.Service", "SmartTeethCare.Service\SmartTeethCare.Service.csproj", "{09BCB773-EBBC-488D-BB41-2C892A189BFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E02AEB41-B597-4B86-97E4-AC609E1EE3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E02AEB41-B597-4B86-97E4-AC609E1EE3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E02AEB41-B597-4B86-97E4-AC609E1EE3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BCB773-EBBC-488D-BB41-2C892A189BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BCB773-EBBC-488D-BB41-2C892A189BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BCB773-EBBC-488D-BB41-2C892A189BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BCB773-EBBC-488D-BB41-2C892A189BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
