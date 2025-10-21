@@ -11,14 +11,18 @@ namespace SmartTeethCare.API
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
+            //builder.Services.AddOpenApi();             this dot net version does not support UI in OpenApi so that's why we are using swagger
+
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.MapOpenApi();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
