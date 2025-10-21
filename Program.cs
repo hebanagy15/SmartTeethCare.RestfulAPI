@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using SmartTeethCare.Repository.Data;
 
 namespace SmartTeethCare.API
 {
@@ -7,7 +10,14 @@ namespace SmartTeethCare.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // Add services to the container.
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");      //from appsettings.json
+
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(connectionString));
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
