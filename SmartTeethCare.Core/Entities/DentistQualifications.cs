@@ -8,5 +8,7 @@ namespace SmartTeethCare.Core.Entities
 {
     internal class DentistQualifications
     {
+        public string CertificationName { get; set; }
+
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmartTeethCare.Core.Entities
 {
-    internal class Speciality
+    internal class Speciality: BaseEntity
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

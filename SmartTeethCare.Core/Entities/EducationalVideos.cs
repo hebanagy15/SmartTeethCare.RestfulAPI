@@ -8,5 +8,6 @@ namespace SmartTeethCare.Core.Entities
 {
     internal class EducationalVideos
     {
+        public string VideoURL { get; set; }
     }
 }
