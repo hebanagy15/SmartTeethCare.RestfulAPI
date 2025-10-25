@@ -14,5 +14,6 @@ namespace SmartTeethCare.Core.Entities
         // Relation with User
         public string UserId { get; set; }
         public User User { get; set; }
+        public ICollection<Prescription> Prescriptions { get; set; }
     }
 }

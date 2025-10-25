@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartTeethCare.Core.Entities
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
         public int Id { get; set; }    // common Id property for all entities
     }

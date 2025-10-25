@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace SmartTeethCare.Core.Entities
 {
-    internal class Prescription
-    {
+    public class Prescription : BaseEntity
+        {
+        public DateTime Date { get; set; }
+
+        // Foreign Keys
+        public int PatientId { get; set; }
+        public int DoctorId { get; set; }
+
+        // Navigation Properties
+        public Patient Patient { get; set; }
+        public Doctor Doctor { get; set; }
+
+       
+        public ICollection<PrescriptionMedicine>? PrescriptionMedicines { get; set; }
     }
 }

@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace SmartTeethCare.Core.Entities
 {
-    internal class Medicine
+    public class Medicine : BaseEntity
     {
+       
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public decimal Price { get; set; }
+
+
+        public ICollection<PrescriptionMedicine>? PrescriptionMedicines { get; set; }
+
     }
 }

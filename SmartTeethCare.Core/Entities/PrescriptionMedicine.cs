@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SmartTeethCare.Core.Entities
 {
-    internal class PrescriptionMedicine
+    public class PrescriptionMedicine
     {
+
+        public int PrescriptionID { get; set; } 
+        public int MedicineID { get; set; }   
+
+        // Navigation properties
+        public Prescription Prescription { get; set; }
+        public Medicine Medicine { get; set; }
     }
 }
